@@ -44,7 +44,7 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 9
+                    "ioValue": 8
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -110,9 +110,9 @@
         {
             "atomType": "Join",
             "name": "Fusion",
-            "x": 0.6835564053537285,
-            "y": 0.5,
-            "uniqueID": 1732559818414,
+            "x": 0.6940726577437858,
+            "y": 0.5384615384615384,
+            "uniqueID": 1732560813816,
             "ioValues": [
                 {
                     "name": "Shape 1",
@@ -141,7 +141,7 @@
             "ap2Name": "Shape 1",
             "ap2Primary": false,
             "ap1ID": 1732559600604,
-            "ap2ID": 1732559818414
+            "ap2ID": 1732560813816
         },
         {
             "ap1Name": "geometry",
@@ -162,7 +162,7 @@
             "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": 1732559621985,
-            "ap2ID": 1732559818414
+            "ap2ID": 1732560813816
         }
     ],
     "unitsKey": "Inches",
