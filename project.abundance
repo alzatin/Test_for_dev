@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1732559592428,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1733166610144
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -146,6 +151,36 @@
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
             "unionType": "Assembly",
             "unionIndex": 0
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.6536007292616226,
+            "y": 0.8513931888544891,
+            "uniqueID": 1733166610144,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1732559621985
+                }
+            ],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 1
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.6927985414767548,
+            "y": 0.6873065015479876,
+            "uniqueID": 1733166717014,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1732559621985
+                }
+            ],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 0
         }
     ],
     "allConnectors": [
@@ -197,10 +232,31 @@
             "ap2Primary": false,
             "ap1ID": 1732559621985,
             "ap2ID": 1733164981656
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1732559621985,
+            "ap2ID": 1733166610144
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1732559621985,
+            "ap2ID": 1733166717014
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1733166610144,
+            "ap2ID": 1732559592428
         }
     ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
