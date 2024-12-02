@@ -20,8 +20,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.2768839966130398,
-            "y": 0.4408284023668639,
+            "x": 0.1567912488605287,
+            "y": 0.5851393188854489,
             "uniqueID": 1732559595479,
             "ioValues": [
                 {
@@ -34,8 +34,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5516252390057361,
-            "y": 0.39644970414201186,
+            "x": 0.463081130355515,
+            "y": 0.26625386996904027,
             "uniqueID": 1732559600604,
             "ioValues": [
                 {
@@ -52,8 +52,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.39796782387806945,
-            "y": 0.4674556213017752,
+            "x": 0.3318140382862352,
+            "y": 0.4582043343653251,
             "uniqueID": 1732559602510,
             "ioValues": [
                 {
@@ -78,8 +78,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.3488569009314141,
-            "y": 0.7544378698224853,
+            "x": 0.251595259799453,
+            "y": 0.7987616099071208,
             "uniqueID": 1732559616107,
             "ioValues": [
                 {
@@ -92,8 +92,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5554493307839389,
-            "y": 0.6982248520710059,
+            "x": 0.41750227894257064,
+            "y": 0.7492260061919505,
             "uniqueID": 1732559621985,
             "ioValues": [
                 {
@@ -109,9 +109,9 @@
         },
         {
             "atomType": "Join",
-            "name": "Fusion",
-            "x": 0.6940726577437858,
-            "y": 0.5384615384615384,
+            "name": "Assembly",
+            "x": 0.6873290793072014,
+            "y": 0.21981424148606812,
             "uniqueID": 1732560813816,
             "ioValues": [
                 {
@@ -124,8 +124,28 @@
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-            "unionType": "Fusion",
-            "unionIndex": 1
+            "unionType": "Assembly",
+            "unionIndex": 0
+        },
+        {
+            "atomType": "Join",
+            "name": "Assembly",
+            "x": 0.7365542388331814,
+            "y": 0.4365325077399381,
+            "uniqueID": 1733164981656,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1732559600604
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1732559621985
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Assembly",
+            "unionIndex": 0
         }
     ],
     "allConnectors": [
@@ -142,6 +162,13 @@
             "ap2Primary": false,
             "ap1ID": 1732559600604,
             "ap2ID": 1732560813816
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1732559600604,
+            "ap2ID": 1733164981656
         },
         {
             "ap1Name": "geometry",
@@ -163,6 +190,13 @@
             "ap2Primary": false,
             "ap1ID": 1732559621985,
             "ap2ID": 1732560813816
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1732559621985,
+            "ap2ID": 1733164981656
         }
     ],
     "unitsKey": "Inches",
