@@ -170,8 +170,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.6927985414767548,
-            "y": 0.6873065015479876,
+            "x": 0.6773017319963537,
+            "y": 0.6563467492260062,
             "uniqueID": 1733166717014,
             "ioValues": [
                 {
@@ -180,7 +180,7 @@
                 }
             ],
             "description": "Changes the color of the shape.",
-            "selectedColorIndex": 0
+            "selectedColorIndex": 3
         }
     ],
     "allConnectors": [
