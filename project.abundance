@@ -130,18 +130,18 @@
         {
             "atomType": "Text",
             "name": "Text",
-            "x": 0.3062898814949863,
-            "y": 0.7306501547987616,
+            "x": 0.3081130355515041,
+            "y": 0.7492260061919505,
             "uniqueID": 1733173024913,
             "ioValues": [],
             "description": "Creates a new text sketch.",
-            "fontFamily": "ROBOTO"
+            "fontFamily": "ANONYMOUSPRO"
         },
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.4676390154968095,
-            "y": 0.7337461300309598,
+            "x": 0.5250683682771194,
+            "y": 0.6687306501547987,
             "uniqueID": 1733173181388,
             "ioValues": [
                 {
