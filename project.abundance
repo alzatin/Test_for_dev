@@ -30,7 +30,7 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 2
+                    "ioValue": 6
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -38,8 +38,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.3404696132596685,
-            "y": 0.25443786982248523,
+            "x": 0.3342541436464089,
+            "y": 0.2485207100591716,
             "uniqueID": 1732559602510,
             "ioValues": [
                 {
@@ -56,7 +56,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 5
+                    "ioValue": 0
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -78,8 +78,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.399171270718232,
-            "y": 0.6153846153846154,
+            "x": 0.3314917127071823,
+            "y": 0.6745562130177515,
             "uniqueID": 1732559621985,
             "ioValues": [
                 {
@@ -96,8 +96,8 @@
         {
             "atomType": "Join",
             "name": "Fusion",
-            "x": 0.6167127071823204,
-            "y": 0.5414201183431953,
+            "x": 0.6153314917127072,
+            "y": 0.5325443786982249,
             "uniqueID": 1732560813816,
             "ioValues": [
                 {
@@ -116,8 +116,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.2292817679558011,
-            "y": 0.3431952662721894,
+            "x": 0.2272099447513812,
+            "y": 0.35207100591715973,
             "uniqueID": 1733718257231,
             "ioValues": [
                 {
@@ -126,7 +126,7 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 2
+                    "ioValue": 9
                 }
             ],
             "description": "Creates a new rectangle."
