@@ -135,7 +135,8 @@
             "uniqueID": 1733173024913,
             "ioValues": [],
             "description": "Creates a new text sketch.",
-            "fontFamily": "ANONYMOUSPRO"
+            "fontFamily": "ANONYMOUSPRO",
+            "selectedFontIndex": 0
         },
         {
             "atomType": "Extrude",
