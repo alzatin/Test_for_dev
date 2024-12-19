@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1732559592428,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1734644042532
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -872,8 +877,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.4640883977900553,
-            "y": 0.46439628482972134,
+            "x": 0.4604051565377532,
+            "y": 0.47058823529411764,
             "uniqueID": 1734644042532,
             "ioValues": [
                 {
@@ -902,6 +907,13 @@
             "ap2Primary": false,
             "ap1ID": 1734644033186,
             "ap2ID": 1734644042532
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1734644042532,
+            "ap2ID": 1732559592428
         }
     ],
     "unitsKey": "Inches",
