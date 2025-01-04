@@ -20,13 +20,13 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.23616236162361623,
-            "y": 0.19090909090909092,
+            "x": 0.23247232472324725,
+            "y": 0.19393939393939394,
             "uniqueID": 1736020027555,
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 1
                 }
             ],
             "description": "Creates a new circle."
@@ -116,13 +116,13 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Linear-Pattern",
-            "x": 0.3994464944649447,
-            "y": 0.6757575757575758,
+            "x": 0.4022140221402214,
+            "y": 0.5818181818181818,
             "uniqueID": 1736020244493,
             "ioValues": [
                 {
                     "name": "shape",
-                    "ioValue": 10
+                    "ioValue": 1736020027555
                 },
                 {
                     "name": "number of repeats",
@@ -134,7 +134,7 @@
                 },
                 {
                     "name": "xOffset",
-                    "ioValue": 13
+                    "ioValue": 1.5
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -146,7 +146,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1736020243766,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1736020244241
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -188,7 +193,7 @@
                     "ioValues": [
                         {
                             "name": "shape",
-                            "ioValue": 10
+                            "ioValue": 1736020027555
                         },
                         {
                             "name": "times",
@@ -196,11 +201,11 @@
                         },
                         {
                             "name": "xOffset",
-                            "ioValue": 10
+                            "ioValue": 1.5
                         },
                         {
                             "name": "yOffset",
-                            "ioValue": 10
+                            "ioValue": 0
                         }
                     ],
                     "description": "Defines a Replicad code block.",
@@ -323,6 +328,24 @@
             "unitsKey": "Inches",
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.6642066420664207,
+            "y": 0.5727272727272728,
+            "uniqueID": 1736020533314,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": 1736020244493
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": 1736020030731
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
         }
     ],
     "allConnectors": [
@@ -335,10 +358,24 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "shape",
+            "ap2Primary": false,
+            "ap1ID": 1736020027555,
+            "ap2ID": 1736020244493
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": 1736020030731,
             "ap2ID": 1736020053279
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 1736020030731,
+            "ap2ID": 1736020533314
         },
         {
             "ap1Name": "geometry",
@@ -353,6 +390,13 @@
             "ap2Primary": true,
             "ap1ID": 1736020053279,
             "ap2ID": 1736020080100
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 1736020244493,
+            "ap2ID": 1736020533314
         }
     ],
     "unitsKey": "Inches",
