@@ -332,9 +332,27 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.6245387453874538,
-            "y": 0.5606060606060607,
+            "x": 0.6005535055350554,
+            "y": 0.4636363636363637,
             "uniqueID": 1736020533314,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": 1736020027555
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": 1736020030731
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.5913284132841329,
+            "y": 0.7575757575757576,
+            "uniqueID": 1736021239595,
             "ioValues": [
                 {
                     "name": "geometry2",
@@ -365,6 +383,13 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 1736020027555,
+            "ap2ID": 1736020533314
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": 1736020030731,
@@ -376,6 +401,13 @@
             "ap2Primary": false,
             "ap1ID": 1736020030731,
             "ap2ID": 1736020533314
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 1736020030731,
+            "ap2ID": 1736021239595
         },
         {
             "ap1Name": "geometry",
@@ -396,7 +428,7 @@
             "ap2Name": "geometry2",
             "ap2Primary": false,
             "ap1ID": 1736020244493,
-            "ap2ID": 1736020533314
+            "ap2ID": 1736021239595
         }
     ],
     "unitsKey": "Inches",
