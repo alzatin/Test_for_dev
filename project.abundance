@@ -34,8 +34,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.20571955719557197,
-            "y": 0.36363636363636365,
+            "x": 0.20848708487084872,
+            "y": 0.3787878787878788,
             "uniqueID": 1736020030731,
             "ioValues": [
                 {
@@ -78,8 +78,8 @@
         {
             "atomType": "Join",
             "name": "Assembly",
-            "x": 0.49538745387453875,
-            "y": 0.2515151515151515,
+            "x": 0.492619926199262,
+            "y": 0.24242424242424243,
             "uniqueID": 1736020053279,
             "ioValues": [
                 {
@@ -116,8 +116,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Linear-Pattern",
-            "x": 0.39114391143911437,
-            "y": 0.6878787878787879,
+            "x": 0.3542435424354244,
+            "y": 0.5757575757575757,
             "uniqueID": 1736020244493,
             "ioValues": [
                 {
@@ -332,8 +332,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.6005535055350554,
-            "y": 0.4636363636363637,
+            "x": 0.4824723247232473,
+            "y": 0.42424242424242425,
             "uniqueID": 1736020533314,
             "ioValues": [
                 {
@@ -350,8 +350,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.5913284132841329,
-            "y": 0.7575757575757576,
+            "x": 0.6512915129151291,
+            "y": 0.6060606060606061,
             "uniqueID": 1736021239595,
             "ioValues": [
                 {
@@ -361,6 +361,62 @@
                 {
                     "name": "geometry1",
                     "ioValue": 1736020030731
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "RegularPolygon",
+            "name": "RegularPolygon",
+            "x": 0.1392988929889299,
+            "y": 0.6818181818181819,
+            "uniqueID": 1736021503646,
+            "ioValues": [
+                {
+                    "name": "number of sides",
+                    "ioValue": 6
+                },
+                {
+                    "name": "diameter",
+                    "ioValue": 20
+                }
+            ],
+            "description": "Creates a new regular polygon. Corners are on the diameter."
+        },
+        {
+            "atomType": "Join",
+            "name": "Assembly",
+            "x": 0.30904059040590404,
+            "y": 0.7424242424242424,
+            "uniqueID": 1736021517928,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1736020030731
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1736021503646
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Assembly",
+            "unionIndex": 0
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.5618081180811808,
+            "y": 0.7696969696969698,
+            "uniqueID": 1736021537092,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": 1736020533314
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": 1736021517928
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -413,6 +469,13 @@
             "ap1Name": "geometry",
             "ap2Name": "Shape 1",
             "ap2Primary": false,
+            "ap1ID": 1736020030731,
+            "ap2ID": 1736021517928
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
             "ap1ID": 1736020037527,
             "ap2ID": 1736020053279
         },
@@ -429,6 +492,27 @@
             "ap2Primary": false,
             "ap1ID": 1736020244493,
             "ap2ID": 1736021239595
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 1736020533314,
+            "ap2ID": 1736021537092
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1736021503646,
+            "ap2ID": 1736021517928
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 1736021517928,
+            "ap2ID": 1736021537092
         }
     ],
     "unitsKey": "Inches",
